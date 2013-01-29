@@ -2,6 +2,7 @@
 *.sublime-workspace
 *.log
 *.scss
+*.scssc
 
 .DS_Store
 .htaccess

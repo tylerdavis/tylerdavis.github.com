@@ -21,14 +21,6 @@ body {
 .dark-grey {
   color: #4b4b4b; }
 
-.fork-me {
-  display: none;
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 100px;
-  height: 100px; }
-
 .header {
   text-align: center;
   text-shadow: 1px 5px 10px rgba(0, 0, 0, 0.5);
@@ -124,6 +116,10 @@ body {
       text-decoration: none; }
   .post .post-body {
     padding-top: 5px; }
+    .post .post-body code {
+      color: white;
+      background-color: #474747;
+      border: none; }
   .post .post-footer {
     font-size: .8em; }
 
