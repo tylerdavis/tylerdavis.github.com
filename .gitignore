@@ -1,0 +1,12 @@
+*.sublime-project
+*.sublime-workspace
+*.log
+*.scss
+
+.DS_Store
+.htaccess
+
+.buildignore
+
+components/bootstrap
+components/font-awesome/docs

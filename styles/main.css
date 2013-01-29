@@ -1,0 +1,138 @@
+body {
+  background: #555;
+  color: #eee;
+  font-family: "Cutive Mono", serif; }
+
+.teal {
+  color: #50d0ed; }
+
+.green {
+  color: #96dd05; }
+
+.red {
+  color: #c0064a; }
+
+.orange {
+  color: #ff8000; }
+
+.light-grey {
+  color: #8b8b8b; }
+
+.dark-grey {
+  color: #4b4b4b; }
+
+.fork-me {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100px;
+  height: 100px; }
+
+.header {
+  text-align: center;
+  text-shadow: 1px 5px 10px rgba(0, 0, 0, 0.5);
+  background-color: #2d2d2d; }
+  .header .icon-heart:hover {
+    color: #640000; }
+  .header h1 {
+    font-size: 2.7em;
+    margin: 0;
+    padding: 30px 0; }
+    .header h1 i {
+      font-size: .3em;
+      padding-right: 8px;
+      color: rgba(255, 255, 255, 0.7); }
+    .header h1 i:last-child {
+      padding-right: 0; }
+  .header .phone-header {
+    padding: 10px 0; }
+    .header .phone-header h1 {
+      padding: 0 0 10px 0; }
+  .header p {
+    font-size: 1.6em;
+    margin: 0; }
+
+.navbar {
+  box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.5);
+  margin: 0;
+  margin-bottom: 20px; }
+
+.navbar .nav,
+.navbar .nav > li {
+  font-size: 1.2em;
+  float: none;
+  display: inline-block;
+  *display: inline;
+  /* ie7 fix */
+  *zoom: 1;
+  /* hasLayout ie7 trigger */
+  vertical-align: top;
+  line-height: 1em;
+  cursor: pointer; }
+  .navbar .nav a,
+  .navbar .nav > li a {
+    color: #8b8b8b;
+    text-shadow: none; }
+  .navbar .nav a:hover,
+  .navbar .nav > li a:hover {
+    color: #fff; }
+
+.navbar .nav > .active > a, .navbar .nav > .active > a:hover, .navbar .nav > .active > a:focus {
+  background: #818181;
+  color: #000; }
+
+.navbar-inner {
+  min-height: 20px;
+  text-align: center;
+  background: #444;
+  border: none;
+  border-radius: 0; }
+
+.container {
+  background: #282828;
+  box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.5); }
+
+.about-me-container {
+  margin: 0;
+  padding: 0 10px;
+  text-align: center; }
+  .about-me-container .title {
+    font-size: 1.4em; }
+  .about-me-container p {
+    text-align: left;
+    padding-left: 15px; }
+
+.resume-container {
+  padding: 0 20px; }
+
+.post {
+  font-family: 'HelveticaNeue';
+  padding: 0 20px; }
+  .post .post-head .title {
+    margin: 5px 0 0; }
+    .post .post-head .title i {
+      font-size: 0.6em;
+      position: relative;
+      bottom: 4px; }
+  .post .post-head .social {
+    font-size: 1em; }
+    .post .post-head .social a {
+      color: #8b8b8b; }
+    .post .post-head .social a:hover {
+      color: #0088cc;
+      text-decoration: none; }
+  .post .post-body {
+    padding-top: 5px; }
+  .post .post-footer {
+    font-size: .8em; }
+
+.post:last-child {
+  padding-bottom: 20px; }
+
+.footer {
+  margin-top: 20px; }
+  .footer .contact div {
+    text-align: center; }
+    .footer .contact div a {
+      color: inherit; }

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+        <title>Tyler Davis - Frontend Developer</title>
+        <meta name="description" content=""/>
+        <meta name="viewport" content="width=device-width"/>
+        <link rel="stylesheet" type="text/css" media="screen" href="styles/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" media="screen" href="/styles/bootstrap-responsive.min.css">
+        <link rel="stylesheet" type="text/css" href="components/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="components/font-awesome/css/font-awesome-ie7.min.css">
+        <link href='http://fonts.googleapis.com/css?family=Cutive+Mono|Electrolize|Special+Elite' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" media="screen" href="styles/main.css"/>
+
+    </head>
+    <body>
+        <header class="header" style="">
+            <div class="visible-desktop">
+                <h1><span class="teal">var</span> <span class="green">tylerDavis</span> <span class="red">=</span> <span class="teal">function</span> () { <i class="icon-desktop"></i><i class="icon-heart"></i><i class="icon-music"></i> }</h1>
+            </div>
+            <div class="visible-tablet">
+                <h1><span class="teal">function</span> <span class="green">tylerDavis</span> () { <i class="icon-desktop"></i><i class="icon-heart"></i><i class="icon-music"></i> }</h1>
+            </div>
+            <div class="phone-header visible-phone">
+                <h1 class="green">Tyler Davis</h1>
+                <i class="icon-desktop"></i><i class="icon-heart"></i><i class="icon-music"></i>
+            </div>
+        </header>
+        <div class="navbar">
+            <div class="navbar-inner">
+                <ul class="nav">
+                    <li class="about active"><a href="#">About</a></li>
+                    <li class="resume"><a href="#resume">Résumé</a></li>
+                    <!-- <li class="portfolio"><a href="#portfolio">Portfolio</a></li> -->
+                    <li class="blog"><a href="#blog">Blog</a></li>
+                    <li class="contact"><a href="mailto:tyebud@gmail.com" target="_blank">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <!-- Template Jazz goes here -->
+        </div>
+        <div class="footer">
+            <div class="contact light-grey row-fluid">
+                <div class="span3"></div>
+                <div class="icon-envelope span2"><a href=""> tyebud@gmail.com</a></div>
+                <div class="icon-phone span2"> +1(858)354-0054</div>
+                <div class="icon-map-marker span2"> San Francisco, CA</div>
+                <div class="span3"></div>
+            </div>
+        </div>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+
+
+        <!-- Templates -->
+
+        <script id="about-template" type="text/x-handlebars-template">
+            <div class="about-me-container">
+                <h2>I build web applications.</h2>
+                <div class="row-fluid">
+                    <div class="about span4">
+                        <h3 class="title orange">Front-end Developer</h3>
+                        <p>I'm a HTML and CSS master and have a crazy obsession with Javascript.  Front-end dev is moving faster than any other technology right now and I love being right there with it.</p>
+                    </div>
+                    <div class="skills span4">
+                        <h3 class="title orange">Musician</h3>
+                        <p>I've got a passion for sound design and audio engineering.  Ableton Live and Max/MSP are my favorite instruments.</p>
+                    </div>
+                    <div class="work span4">
+                        <h3 class="title orange">ClearSlide, Inc.</h3>
+                        <p>I'm an engineer at ClearSlide in San Francisco.  I'm blown away by where we've come from and where we're headed.</p>
+                    </div>
+                </div>
+            </div>   
+        </script>
+
+        <script id="resume-template" type="text/x-handlebars-template">
+            <div class="resume-container">
+                <div class="row-fluid">
+                    <div class="skills span6">
+                        <h2>Skills</h2>
+                        <ul>
+                            <li><strong>Front-end: </strong>HTML, CSS and JavasSript.</li>
+                            <li><strong>Back-end: </strong>JavaScript - Node.js, Python - Flask, Django, Ruby - Sinatra, Rails</li>
+                            <li>Database: SQL - Mostly MySQL</li>
+                            <li>Environment: Vim, Git, Yeoman, Homebrew <i class="icon-heart"></i></li>
+                        </ul>
+                    </div>
+                    <div class="experience span6">
+                        <h2>Experience</h2>
+                        <ul>
+                            <li>2009 - Present: Engineer at <a href="http://www.clearslide.com">ClearSlide, Inc.</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </script>
+
+        <script id="portfolio-template" type="text/x-handlebars-template">
+            <div class="portfolio-container">
+                <div class="row-fluid">
+                    <h2>Portfolio</h2>
+                </div>
+            </div>
+        </script>
+
+        <script id="blog-template" type="text/x-handlebars-template">
+            <div class="blog-container">
+                <div class="blog-content"></div>
+            </div>
+        </script>
+
+        <script id="post-template" type="text/x-handlebars-template">
+                <div class="post-head">
+                    <h3 class="title">
+                        <a class="orange" href="#blog/post/{{ id }}">{{ title }}</a>
+                    </h3>
+                    <div class="social light-grey">
+                        <a href="https://plus.google.com/share?url=http://tylerdavis.github.com/#blog/post/{{ id }}">
+                            <i class="icon-google-plus-sign"></i>
+                        <a/>
+                        <a href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A//tylerdavis.github.com/#blog/post/{{ id }}&title={{ title }}">
+                            <i class="icon-linkedin-sign"></i>
+                        </a>
+                        <a class="twitter" href="https://twitter.com/intent/tweet?url=http%3A%2F%2Ftylerdavis.github.com%2F%23blog%2Fpost%2F{{ id }}">
+                            <i class="icon-twitter-sign"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="post-body">{{{ body }}} </div>
+                <div class="post-footer light-grey">
+                    <span class="timestamp icon-time"> {{ created }}</span>
+                    <br class="visible-phone" />
+                    <span class="post-tags icon-tags"> Tags: {{ tags }}</span>
+                </div>
+        </script>
+
+
+        <!-- build:js scripts/scripts.js -->
+
+        <script src="scripts/vendor/jquery.min.js"></script>
+        <script src="components/handlebars/handlebars.js"></script>
+        <script src="scripts/vendor/markdown.converter.js"></script>
+        <script src="scripts/vendor/bootstrap.min.js"></script>
+        <script src="scripts/vendor/lodash.min.js"></script>
+        <script src="scripts/vendor/backbone-min.js"></script>
+        <script src="scripts/main.js"></script>
+        <script src="scripts/helpers/helpers.js"></script>
+        <script src="scripts/views/application-view.js"></script>
+        <script src="scripts/views/section-view.js"></script>
+        <script src="scripts/router.js"></script>
+        <script src="scripts/views/post-view.js"></script>
+        <script src="scripts/views/blog-view.js"></script>
+        <script src="scripts/models/post-model.js"></script>
+        <script src="scripts/collections/posts-collection.js"></script>
+        <!-- endbuild -->
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            var _gaq=[['_setAccount','UA-38044456-1'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
+    </body>
+</html>
