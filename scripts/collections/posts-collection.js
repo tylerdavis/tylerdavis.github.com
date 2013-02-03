@@ -6,7 +6,7 @@ tylerdavis.Collections.Posts = Backbone.Collection.extend({
 		var params = _.extend({
 			type: 'GET',
 			dataType: 'jsonp',
-			url: 'http://evening-sea-5256.herokuapp.com/posts.js'
+			url: 'http://tmd.io/posts.js'
 		}, options);
 
 		return $.ajax(params);

@@ -13,7 +13,7 @@ tylerdavis.Models.Post = Backbone.Model.extend({
 		var params = _.extend({
 			type: 'GET',
 			dataType: 'jsonp',
-			url: 'http://evening-sea-5256.herokuapp.com/post' + this.model.id + '.js'
+			url: 'http://tmd.io/posts/' + this.model.id + '.js'
 		}, options);
 
 		return $.ajax(params);
