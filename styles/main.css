@@ -100,11 +100,12 @@ body {
 
 .post {
   font-family: 'HelveticaNeue';
-  padding: 0 20px; }
+  padding: 40px 80px; }
   .post .post-head .title {
-    margin: 5px 0 0; }
+    margin: 5px 0;
+    font-size: 2.2em; }
     .post .post-head .title i {
-      font-size: 0.6em;
+      font-size: 0.8em;
       position: relative;
       bottom: 4px; }
   .post .post-head .social {
@@ -115,11 +116,21 @@ body {
       color: #0088cc;
       text-decoration: none; }
   .post .post-body {
-    padding-top: 5px; }
-    .post .post-body code {
-      color: white;
+    padding-top: 5px;
+    font-size: 1.2em;
+    line-height: 1.6em; }
+    .post .post-body p {
+      margin-bottom: 30px; }
+      .post .post-body p code {
+        background-color: #474747;
+        border: none;
+        color: #ff8000; }
+    .post .post-body pre {
       background-color: #474747;
-      border: none; }
+      margin-bottom: 20px; }
+      .post .post-body pre code {
+        color: white;
+        border: none; }
   .post .post-footer {
     font-size: .8em; }
 
